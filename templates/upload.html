@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload file</title>
+</head>
+<body>
+    <h3>Upload image for pixel counting</h3>
+    <form action="{{url_for('uploader')}}" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" multiple accept="image/*" >
+    <input type="submit" value="Upload image">
+</form>
+</body>
+</html>
